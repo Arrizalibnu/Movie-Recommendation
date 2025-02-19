@@ -1,0 +1,5 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text
+movie_recommendation_api/models/recommendation_movie_model_ncf.h5 filter=lfs diff=lfs merge=lfs -text
+movie_recommendation_api/data/df.csv filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,23 @@
+{
+    "family": "movie-recommender-task",
+    "executionRoleArn": "arn:aws:iam::156041405785:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+      {
+        "name": "movie-recommender",
+        "image": "docker.io/arrizalibnuzainuddin31/movie-recommender:latest",
+        "portMappings": [
+          {
+            "containerPort": 8000,
+            "hostPort": 8000,
+            "protocol": "tcp"
+          }
+        ],
+        "essential": true
+      }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "1024",
+    "memory": "4096"
+  }
+  
